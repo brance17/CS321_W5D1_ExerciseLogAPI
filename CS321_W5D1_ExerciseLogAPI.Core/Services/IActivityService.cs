@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿
+using System.Collections.Generic;
 using CS321_W5D1_ExerciseLogAPI.Core.Models;
 
 namespace CS321_W5D1_ExerciseLogAPI.Core.Services
@@ -11,5 +12,6 @@ namespace CS321_W5D1_ExerciseLogAPI.Core.Services
         void Remove(Activity Activity);
         Activity Update(Activity updatedActivity);
         // TODO: Class Project: Add GetAllForUser() method
+        IEnumerable<Activity> GetAllForUser(string userId);
     }
 }
